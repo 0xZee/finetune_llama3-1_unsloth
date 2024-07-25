@@ -2,7 +2,7 @@
 ---
 
 ### 🏬 FineTunning Framework : `Unsloth` on `GPU Tesla T4`
-### 🦙 Source Model : `Llama 3.1 8b` Model on custom 🕴️ 
+### 🦙 Source Model : `models--unsloth--meta-llama-3.1-8b-bnb-4bit` Model 🕴️ 
 ### 💾 Training DataSet ; "yahma/alpaca-cleaned" on HuggingFace
 ### ⚙️ Fine-Tuned Model : 🕴️ `llama3-1_0xZee_model`
 ---
