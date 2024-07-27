@@ -132,12 +132,13 @@ def finetune(
       return { "text" : texts, }
   pass
   
-  dataset = load_dataset(DATASET, split = "train")
+  #dataset = load_dataset(DATASET, split = "train") # from HF Hub
+  dataset = load_dataset("parquet", data_dir='arxiv-math-Unsloth-tune-50k/data', split = "train") # From local
   dataset = dataset.map(formatting_prompts_func, batched = True,)
   
   print("\n-------------------------------------------------------------")
   print(" ✅ DataSet Loaded and splitted successfully")
-  print(" 📚 DataSet : https://huggingface.co/datasets/yahma/alpaca-cleaned")
+  print(" 📚 DataSet : xxx ")
   
   ## use Huggingface TRL's SFTTrainer! More docs here: TRL SFT docs. We do 100 steps to speed things up, but you can set num_train_epochs=1 for a full run, and turn off max_steps=None. We also support TRL's DPOTrainer!
   
