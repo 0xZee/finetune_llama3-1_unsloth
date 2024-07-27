@@ -1,15 +1,17 @@
 # 🕴️ finetune `LLM` 🦙 model on custom `DataSet`, using `unsloth`
 
 ## 🕴️ ONESTEP CODE : finetune.py 🦙
----
-1. Prepare `DataSet` : To match the `unsloth` format
 
-[dataset_to_unsloth.ipynb]
+1. Prepare `DataSet` to match the `unsloth` format :
+> [process_dataset_to_unsloth.ipynb](process_dataset_to_unsloth.ipynb)
 
 ```bash
 Process Dataset -> dataset_to_unsloth.ipynb
 ```
-2. Adapt the `config arguments` :
+
+2. Adapt the `config arguments` : `finetune.py` in finetune.md
+> [finetune.md](finetune.md)
+
 ```python
 def finetune(
   # -- PARAMETERS CONFIG -- 
@@ -22,13 +24,14 @@ def finetune(
   TEST_PROMPT = "Which compound is antiferromagnetic?", # response : common magnetic ordering in various materials.
 ):
 ```
-3. Run the onestep file :
+3. Run the onestep file : `finetune.py` in finetune.md
+> [finetune.md](finetune.md)
 ```bash
 python finetune.py
 ```
+---
 
 ## 🕴️ finetune llama3.1 🦙 model on custom DataSet
----
 
 - 🏬 FineTunning Framework : `Unsloth` on `GPU Tesla T4`
 - 🦙 Source Model : `models--unsloth--meta-llama-3.1-8b-bnb-4bit` Model 🕴️ 
